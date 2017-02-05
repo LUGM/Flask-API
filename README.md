@@ -1,17 +1,22 @@
 # Flask Backend
 
+Code for Flask backend done at the workshop held on Feb 5, 2017.
+
+Covers basic requests, querying from file and database.
+
 ## Folder structure
 
-- app
-	- init__.py
-	- data
-		- store.db
-	- reqs.py
-- app.json
-- Procfile
-- requirements.txt
-- run.py
-- runtime.txt
+- **app**
+	- `__init__.py`
+	- **data**
+		- `univ.db`
+		- `people.json`
+	- `api.py`
+- `app.json`
+- `Procfile`
+- `requirements.txt`
+- `run.py`
+- `runtime.txt`
 
 ### `run.py`
 
@@ -29,7 +34,7 @@ app = Flask(__name__)		# Our app is an instance of Flask
 from app import api		# Import API here, more files can be imported here
 ```
 
-### `app/api`
+### `app/api.py`
 
 - Imports
 
